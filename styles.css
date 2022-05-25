@@ -1,0 +1,350 @@
+html {
+    font-size: 16px;
+}
+
+.header {
+    background-color: white;
+    position: fixed;
+    border-bottom: 1px solid black;
+    height: 100px;
+    width: 100%;
+    display: block;
+    top: 0px;
+    z-index: 1;
+}
+
+.logo {
+    float: left;
+    height: 80%;
+    width: 20%;
+}
+
+.nav {
+    float: right;
+    text-decoration: none;
+    list-style: none;
+    margin: 0 auto;
+    min-width: 20%;
+    max-width: 100%;
+}
+
+.nav a {
+    display: table;
+    float: left;
+    padding: 0px 20px;
+    text-decoration: underline;
+}
+
+.nav a li {
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    top: 1.5rem;
+}
+
+.nav a li:hover {
+    color: red;
+}
+
+@media only screen and (max-width: 780px) {
+    .nav a {
+        float: left;
+        padding: 0px 20px;
+        text-decoration: underline;
+    }
+
+    .nav a li {
+        position: relative;
+        vertical-align: middle;
+        height: 100%;
+        text-decoration: none;
+        color: black;
+        font-size: 0.75rem;
+        top: 0.75rem;
+    }
+}
+
+.mission-container {
+    background-image: url("./Tsmc.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+    margin: 40px 0 40px 0;
+    display: flex;
+    top: 3.75rem;
+}
+
+.mission-statement {
+    background-color: black;
+    margin: auto;
+    width: 100%;
+    height: 20%;
+    opacity: 0.9;
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+.mission-statement h2 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.mission-statement h3 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+#products h2 {
+    font-family: "Roboto";
+    text-align: center;
+}
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    justify-items: space-around;
+    align-items: center;
+    align-content: center;
+    flex-flow: column wrap;
+    height: 40rem;
+    position: relative;
+    background-color: white;
+    clear: both;
+}
+
+.product1 {
+    background-image: url("https://images.anandtech.com/doci/12677/semiconductor_wafer_678_678x452.jpg");
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 20rem;
+    width: 20rem;
+    padding: 10px 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.product2 {
+    background-image: url("https://cdn.wccftech.com/wp-content/uploads/2021/08/TSMC-3nm.jpg");
+    align-items: center;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 20rem;
+    width: 20rem;
+    padding: 10px 10px;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.product3 {
+    background-image: url("https://optocrypto.com/wp-content/uploads/2021/08/1_TSMC-delays-its-3nm.jpg");
+    align-items: center;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 20rem;
+    width: 20rem;
+    padding: 10px 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.product-description {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 1.4rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .product-container {
+        display: flex;
+        justify-content: space-around;
+        justify-items: space-around;
+        align-items: flex-end;
+        align-content: center;
+        flex-flow: row wrap;
+        height: 80rem;
+        position: relative;
+        background-color: white;
+    }
+
+    .product1 {
+        background-image: url("https://images.anandtech.com/doci/12677/semiconductor_wafer_678_678x452.jpg");
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 20rem;
+        width: 20rem;
+        padding: 2rem 2rem;
+        margin-bottom: 1.5rem;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .product2 {
+        background-image: url("https://cdn.wccftech.com/wp-content/uploads/2021/08/TSMC-3nm.jpg");
+        align-items: center;
+        display: flex;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 20rem;
+        width: 20rem;
+        padding: 2rem 2rem;
+        margin-bottom: 1.5rem;
+        align-self: center;
+        justify-self: center;
+    
+    }
+    
+    .product3 {
+        background-image: url("https://optocrypto.com/wp-content/uploads/2021/08/1_TSMC-delays-its-3nm.jpg");
+        align-items: center;
+        display: flex;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 20rem;
+        width: 20rem;
+        padding: 2rem 2rem;
+        margin-bottom: 1.5rem;
+        align-self: center;
+        justify-self: center;
+    }
+
+}
+
+#exec h2 {
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.exec-container-container {
+    display: flex;
+
+}
+
+.exec-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: space-between;
+    align-items: space-around;
+    height: 40rem;
+    margin-bottom: 3rem;
+    max-width: 100%;
+    position: relative;
+    top: 4rem;
+    row-gap: 2rem;
+}
+
+.exec {
+    height: 10rem;
+    max-width: 6rem;
+    object-fit: cover;
+    flex-wrap: wrap;
+    flex-basis: 17%;
+    margin: 4rem;
+}
+
+.exec h4 {
+    position: relative;
+    text-align: center;
+    font-family: "Roboto";
+    color: black;
+    left: 2.5rem;
+}
+
+.exec h5 {
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+    color: grey;
+    left: 2.5rem;
+}
+
+.exec img {
+    height: 11rem;
+    width: 10rem;
+    padding: 1rem;
+}
+
+.footer-container {
+    display: flex;
+
+}
+
+.footer {
+    position: relative;
+    align-items: center;
+    top: 10rem;
+    width: 100%;
+    height: 6rem;
+    background-color: white;
+    color: black;
+    border-top: 1px solid black;
+    z-index: 1;
+}
+
+.name {
+    float: left;
+    color: black;
+    font-family: sans-serif;
+}
+
+.copyright {
+    position: relative;
+    float: right;
+    color: black;
+    font-family: sans-serif;
+    right: 2rem;
+}
+@media only screen and (max-width: 780px) {
+    .footer-container {
+        display: flex;
+    
+    }
+    .footer {
+        position: absolute;
+        align-items: center;
+        top: 210rem;
+        width: 100%;
+        height: 6rem;
+        background-color: white;
+        color: black;
+        border-top: 1px solid black;
+        z-index: 1;
+    }
+    
+    .name {
+        float: left;
+        color: black;
+        font-family: sans-serif;
+    }
+    
+    .copyright {
+        position: relative;
+        float: right;
+        color: black;
+        font-family: sans-serif;
+    }
+}
